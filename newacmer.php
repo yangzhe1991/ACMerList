@@ -2,7 +2,7 @@
 <?php
 if($_POST)
 {
-$con = mysql_connect("localhost","","");
+$con = mysql_connect("localhost","root","");
 if (!$con)
 {
 	die('Could not connect: ' . mysql_error());

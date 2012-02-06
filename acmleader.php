@@ -23,7 +23,7 @@ $(document).ready(function() {
 			$(this).css("color","gray");	
 		else if(Number($(this).text())<1500)
 			$(this).css("color","green");	
-		else if(Number($(this).text())<1650)
+		else if(Number($(this).text())<1700)
 			$(this).css("color","blue");	
 		else if(Number($(this).text())<1800)
 			$(this).css("color","#a0a");	
@@ -45,7 +45,7 @@ $(document).ready(function() {
 </head>
 <body bgcolor=black>
 <?php
-$con = mysql_connect("localhost","","");
+$con = mysql_connect("localhost","root","");
 if (!$con)
 {
 	die('Could not connect: ' . mysql_error());
