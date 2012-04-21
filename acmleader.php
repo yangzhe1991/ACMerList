@@ -61,7 +61,7 @@ if(mysql_num_rows($r)!=0)
 else $time=0;
 $now=date("Y-m-d H:i:s");
 //echo $now-$time;
-$f5=0;
+$f5=1;
 //if($now-$time>3600)
 if($f5)
 {
@@ -161,7 +161,9 @@ if($f5)
 }
 
 
-echo"<center><h2 style=color:white>东北大学ACMer列表及刷题统计</h2><br><p style=color:white>随时整理随时更新</p></center><table width=600 align=center>
+echo"<center><h2 style=color:white>东北大学ACMer列表及刷题统计</h2><br>
+	<p style=\"color:white\">更新时间：".date("Y-m-d H:i:s")."Powered by <a href=\"https://github.com/yangzhe1991/ACMerList\">ACMerList</a>
+	</p></center><table width=600 align=center>
 	<tr>
 	<td width=15% style=\"color:white\">name</td>
 	<td width=18% style=\"color:white\">grade</td>
@@ -186,6 +188,6 @@ echo"</table>";
 ?>
 
 
-Power By Philo Yang|yangzhe1991 @ NEU
+Powered By Philo Yang|yangzhe1991 @ NEU
 </body>
 </html>
